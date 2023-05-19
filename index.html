@@ -37,6 +37,9 @@
             <nav class="menu">
                 <ul class="menuList">
                     <li class="menuItem">
+                        <a href="src/screens/cursos.html" class="menuLink"> <i class="fa-solid fa-newspaper"></i>   </i>Notícias</a>
+                    </li>
+                    <li class="menuItem">
                         <a href="src/screens/cursos.html" class="menuLink"> <i
                                 class="fa-solid fa-graduation-cap"></i>Cursos</a>
                     </li>
@@ -85,9 +88,9 @@
                     Canguaretama.
                 </p>
                 <div class="botoes">
-                    <a href="#potimaker" class="btnConhecer">Conheça o Potimaker <i
-                            class="fa-solid fa-angle-right"></i></a>
-                    <a href="#equipe" class="btnEquipe">Nossa Equipe <i class="fa-solid fa-angle-right"></i></a>
+                    <button onclick="go ('#potimaker')" class="btnConhecer">Conheça o Potimaker <i
+                            class="fa-solid fa-angle-right"></i></button>
+                    <button onclick="go ('#equipe')" class="btnEquipe">Nossa Equipe <i class="fa-solid fa-angle-right"></i></button>
                 </div>
             </div>
             <div class="divImgPrincipal">
@@ -265,10 +268,10 @@
 
         </section>
         <section class="fimComeco">
-         <img src="images/peixeCor.png" alt="" class="peixe">
+            <img src="images/peixeCor.png" alt="" class="peixe">
             <div class="divFimCom">
                 <h2 class="fim">
-                    O fim é o começo
+                    O fim é o começo,
                 </h2>
                 <h2 class="comeco">
                     O começo é o fim.
@@ -276,16 +279,44 @@
             </div>
             <div class="continue">
                 <p class="textoContinue">Clique na seta ao lado e continue a nadar pelo nosso site.</p>
-                <a href="#inicio" class="btnContinue"><i class="fa-solid fa-chevron-up"></i></a>
+                <button onclick="go('#inicio')" class="btnContinue"><i class="fa-solid fa-chevron-up"></i></button>
             </div>
         </section>
     </main>
     <footer>
-        <p>rodapé</p>
+        <div class="infoRodape">
+
+            <h3 class="tituloRodape">Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Canguaretama</h3>
+            <ul class="infoList">
+                <li class="infoItem">
+                    <a href="https://goo.gl/maps/z1c1jWp3oVjqg3qa7" class="infoLink" target="_blank"><i class="fa-solid fa-location-dot"></i> 160 BR-101, S/N - Areia Branca, Canguaretama - RN, 59190-000</a>
+                </li>
+                <li class="infoItem">
+                    <a href="tel:8440054114" class="infoLink" target="_blank"><i class="fa-solid fa-phone"></i>(84) 4005-4114</a>
+                </li>
+                <li class="infoItem">
+                    <a href="mailto:gabin.cang@ifrn.edu.br" class="infoLink" target="_blank"><i class="fa-regular fa-envelope"></i> gabin.cang@ifrn.edu.br</a>
+                </li>
+            </ul>
+        </div>
+        <div class="parceiros">
+            <h3 class="tituloRodape">Nossos parceiros</h3>
+            <ul class="parceirosList">
+                <li class="parceirosItem">
+                    <a href="https://portal.ifrn.edu.br/" class="parceirosLink" target="_blank">
+                        <img src="images/parceiros/logoIfrn.png" alt="Logo do IFRN" class="parceirosLogo">
+                    </a>
+                </li>
+                <li class="parceirosItem">
+                    <a href="https://www.gov.br/mec/pt-br" class="parceirosLink" target="_blank">
+                        <img src="images/parceiros/logoMec.png" alt="Logo do MEC" class="parceirosLogo">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
-
-
+    <script src="src/javascript/scroll.js"></script>
 </body>
 
 </html>

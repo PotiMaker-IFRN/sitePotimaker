@@ -75,10 +75,19 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 20px;
+    cursor: pointer;
 }
 .btnEquipe{
     width: 30%;
     background-color: var(--bg-primary-section);
+}
+.btnConhecer:hover{
+    background-color: #6182c9;
+}
+.btnEquipe:hover{
+    background-color: var(--bg-secondary-text);
+    color: white;
+
 }
 .quemSomos{
     background-color: var(--bg-secondary-section);
@@ -250,60 +259,4 @@
     font-family: 'Los Angeleno Grotesque', sans-serif;
     font-size: 1.6rem;
     padding: 0 5px;
-}
-.fimComeco{
-    background-color: #000000;
-    padding: 5px;
-    position: relative;
-}
-.peixe{
-    position: absolute;
-    width: 200px;
-    top: 0;
-    right: 200px;
-}
-.divFimCom{
-    width: 80%;
-    /* background-color: #8000FF; */
-    padding: 10px;
-}
-.fim, .comeco{
-    text-align: center;
-    width: 50%;
-    background-color:white;
-    font-size: 5rem;
-    text-align: justify;
-    display: flex;
-    align-items: center;
-    border: 3px solid black;
-    box-shadow: #FF82A066 5px 5px, #FF82A04d 10px 10px, #FF82A033 15px 15px;
-    text-transform: uppercase;
-}
-.comeco{
-    margin: 20px 0px 0px 70px;
-}
-.continue{
-    /* background-color: #8000FF; */
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    /* margin-top: px; */
-    gap: 20px;
-}
-.textoContinue{
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.btnContinue{
-    width: 60px;
-    height: 60px;
-    background-color: #FF82A0;
-    border-radius: 50%;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.5rem;
 }
