@@ -1,0 +1,309 @@
+:root{
+    --bg-menu: #EFAB7F;
+    --bg-footer: #A275DB;
+    --bg-primary-section: #F6F3E4;
+    --bg-secondary-section: #DBD5E4;
+    --bg-tertiary-section: #000000;
+    --bg-primary-text: #8000FF;
+    --bg-secondary-text: #FF0054;
+    --bg-tertiary-text: #FF82A0;
+    --bg-name: #B5FF00;
+    --bg-detail: #839ACD;
+}
+.sobre{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    background-color: var(--bg-primary-section);
+    
+}
+.descricao{
+    width: 49%;
+    height: 500px;
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+}
+.divImgPrincipal{
+    width: 49%;
+    /* border: 1px solid black; */
+    margin: 5px;
+}
+.imgPrincipal{
+    width: 100%;
+}
+.tituloPrincipal{
+    font-size: 6rem;
+    width: 100%;
+    font-family: 'Los Angeleno Grotesque', sans-serif;
+}
+.detalheTituloPrincipal{
+    background-color: var(--bg-detail);
+    padding: 0px 2px;
+    border: 4px solid black;
+    box-shadow: black 8px 5px;
+    font-size: 6.5rem;
+}
+.msgBemvindo{
+    font-size: 1.8rem;
+}
+.botoes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50px;
+}
+.btnConhecer, .btnEquipe{
+    width: 40%;
+    background-color: var(--bg-detail);
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    text-align: center;
+    padding: 3px;
+    border: 3px solid black;
+    font-family: 'Los Angeleno Grotesque', sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.btnEquipe{
+    width: 30%;
+    background-color: var(--bg-primary-section);
+}
+.quemSomos{
+    background-color: var(--bg-secondary-section);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-bottom: 3px solid black;
+    
+}
+.divTituloSecundario{
+    width: 30%;
+    /* border: 1px solid black */
+}
+.tituloSecundario{
+    font-size: 5.8rem;
+    text-transform: uppercase;
+    font-family: 'Los Angeleno Grotesque', sans-serif;
+    color: white;
+    background-color: var(--bg-primary-text);
+    border: 3px solid black;
+    box-shadow: black 8px 5px;
+    text-align: center;
+}
+.divImagemSecundaria{
+    width: 35%;
+}
+.imgSecundaria{
+    width: 100%;
+}
+.potimaker{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 3px solid black;
+    padding: 50px;
+    background-color: var(--bg-primary-section);
+    position: relative;
+}
+.divResumo{
+    width: 30%;
+    height: 270px;
+    background-color:white;
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: black 8px 5px;
+
+}
+.divImgPotimaker{
+    width: 28%;
+    display: flex;
+    border: 3px solid black;
+    box-shadow: black 8px 5px;
+    position: relative;
+}
+.imgPotimaker{
+    width: 100%;
+}
+.btnFotos{
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-tertiary-text);
+    border-radius: 50%;
+    border: 3px solid black;
+    font-size: 4rem;
+    padding: 5px;
+    position: absolute;
+    right: -35px;
+    top: 40%;
+    cursor: pointer;
+}
+.detalheDireita, .detalheEsquerda{
+    position: absolute;
+    width: 70px;
+}
+.detalheDireita{
+    top: 5px;
+    right: 5px;
+}
+.detalheEsquerda{
+    bottom: 5px;
+    left: 5px;
+}
+.equipe{
+   display: flex;
+   border-bottom: 3px solid black;
+   height: 700px;
+
+}
+.sobreEquipe{
+    width: 25%;
+    background-color: #DBD5E4;
+    border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.tituloEquipe{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Los Angeleno Grotesque', sans-serif;
+    color: white;
+    padding: 0px 25px;
+    background-color: var(--bg-secondary-text);
+    border: 3px solid black;
+    box-shadow: black 8px 5px;
+    text-align: center;
+}
+.textoEquipe{
+    /* height: 270px; */
+    background-color:white;
+    font-size: 2rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: black 8px 5px;
+    padding: 20px;
+}
+.divCardsEquipe{
+    width: 75%;
+    display: flex;
+    /* background-color: #8000FF; */
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
+}
+.cardsEquipe {
+    width: 100%;
+    /* background-color: #B5FF00; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cardEquipe{
+    width: 25%;
+    /* background-color: #839ACD; */
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.divFotoEquipe{
+    width: 29%;
+}
+.imgEquipe{
+    width: 100%;
+}
+.infoEquipes{
+    width: 60%;
+}
+.nomeMembro {
+    font-size: 1.8rem;
+    font-family: 'Los Angeleno Grotesque', sans-serif;
+    background-color: var(--bg-name);
+    padding: 0 5px;
+}
+.funcMembro{
+    font-family: 'Los Angeleno Grotesque', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 5px;
+}
+.fimComeco{
+    background-color: #000000;
+    padding: 5px;
+    position: relative;
+}
+.peixe{
+    position: absolute;
+    width: 200px;
+    top: 0;
+    right: 200px;
+}
+.divFimCom{
+    width: 80%;
+    /* background-color: #8000FF; */
+    padding: 10px;
+}
+.fim, .comeco{
+    text-align: center;
+    width: 50%;
+    background-color:white;
+    font-size: 5rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: #FF82A066 5px 5px, #FF82A04d 10px 10px, #FF82A033 15px 15px;
+    text-transform: uppercase;
+}
+.comeco{
+    margin: 20px 0px 0px 70px;
+}
+.continue{
+    /* background-color: #8000FF; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* margin-top: px; */
+    gap: 20px;
+}
+.textoContinue{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.btnContinue{
+    width: 60px;
+    height: 60px;
+    background-color: #FF82A0;
+    border-radius: 50%;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}

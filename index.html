@@ -8,56 +8,277 @@
     <meta name="description" content="Site oficial do FabLab PotiMaker
     - Laboratório de inovação e prototipagem do Instituto Federal do Rio Grande do Norte, Campus Canguaretama.">
     <meta name="author" content="FabLab PotiMaker">
-    
+
+    <script src="https://kit.fontawesome.com/3951763622.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/casanova-scotia" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/los-angeleno-grotesque" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/index.css">
-    
+
     <title>PotiMaker</title>
 </head>
 
 <body>
 
-    <header>
+    <header id="inicio">
         <div class="logo">
-          <img class="imgLogo" src="images/logoPotimaker.png" alt="Logo do PotiMaker">
+            <img class="imgLogo" src="images/logoPotimaker.png" alt="Logo do PotiMaker">
         </div>
-        <nav class="menu">
-            <ul class="menuList">
-                <li class="menuItem">
-                    <a href="src/screens/cursos.html" class="menuLink"> Cursos <i class="fa-solid fa-chevron-down"></i></a>
-                </li>
-                <li class="menuItem">
-                    <a href="src/screens/eventos.html" class="menuLink">Eventos</a>
-                </li>
-                <li class="menuItem">
-                    <a href="src/screens/projetos.html" class="menuLink">Projetos</a>
-                </li>
-                <li class="menuItem">
-                    <a href="src/screens/horarios.html" class="menuLink">Horários</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="social">
-            <ul class="socialList">
-                <li class="socialItem">
-                    <a class="socialLink" href="https://instagram.com/potimaker.ifrn" target="_blank" ><i class="fa-brands fa-instagram icones"></i></a>
-                </li>
-                <li class="socialItem">
-                    <a class="socialLink" href="https://www.youtube.com/@potimakerifrn" target="_blank" ><i class="fa-brands fa-youtube icones"></i></a>
-                </li>
-                <li class="socialItem">
-                    <a class="socialLink" href="mailto:potimaker.ifrn@gmail.com" target="_blank" ><i class="fa-regular fa-envelope icones"></i></a>
-                </li>
-            </ul>
-        </nav>
+        <div class="menu-section on">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="menu">
+                <ul class="menuList">
+                    <li class="menuItem">
+                        <a href="src/screens/cursos.html" class="menuLink"> <i
+                                class="fa-solid fa-graduation-cap"></i>Cursos</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="src/screens/eventos.html" class="menuLink"> <i class="fa-regular fa-calendar-days"></i>
+                            Eventos</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="src/screens/projetos.html" class="menuLink"><i
+                                class="fa-solid fa-gears"></i>Projetos</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="src/screens/horarios.html" class="menuLink"><i class="fa-sharp fa-solid fa-clock"></i>
+                            Horários</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="social">
+                <ul class="socialList">
+                    <li class="socialItem">
+                        <a class="socialLink" href="https://instagram.com/potimaker.ifrn" target="_blank"><i
+                                class="fa-brands fa-instagram icones"></i></a>
+                    </li>
+                    <li class="socialItem">
+                        <a class="socialLink" href="https://www.youtube.com/@potimakerifrn" target="_blank"><i
+                                class="fa-brands fa-youtube icones"></i></a>
+                    </li>
+                    <li class="socialItem">
+                        <a class="socialLink" href="mailto:potimaker.ifrn@gmail.com" target="_blank"><i
+                                class="fa-regular fa-envelope icones"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <p>Conteúdo</p>
+        <section class="sobre">
+            <div class="descricao">
+                <h1 class="tituloPrincipal">
+                    Faça você mesmo, <br>
+                    Seja um <span class="detalheTituloPrincipal">MAKER.</span>
+                </h1>
+                <p class="msgBemvindo">
+                    <strong>Boas-vindas ao site oficial do FabLab PotiMaker</strong> <br>
+                    - Laboratório de inovação e prototipagem do Instituto Federal do Rio Grande do Norte, Campus
+                    Canguaretama.
+                </p>
+                <div class="botoes">
+                    <a href="#potimaker" class="btnConhecer">Conheça o Potimaker <i
+                            class="fa-solid fa-angle-right"></i></a>
+                    <a href="#equipe" class="btnEquipe">Nossa Equipe <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="divImgPrincipal">
+                <img src="images/mosaico1.png" alt="Mosáico com 6 logos do potimaker" class="imgPrincipal">
+            </div>
+        </section>
+        <section class="quemSomos">
+            <div class="divTituloSecundario">
+                <h2 class="tituloSecundario">quem somos?</h2>
+            </div>
+            <div class="divImagemSecundaria">
+                <img class="imgSecundaria" src="images/mosaico2.png" alt="Mosáico com 3 logos do Potimaker">
+
+            </div>
+        </section>
+        <section class="potimaker" id="potimaker">
+            <div class="divResumo">
+                <p class="resumo">
+                    O FabLab foi fundado em 2021 como um espaço de colaboração e experimentação, onde os alunos,
+                    professores e servidores podem trabalhar juntos para transformar suas ideias em realidade.
+                    Oferecemos uma variedade de ferramentas e equipamentos como computadores, impressoras e scanner 3D,
+                    televisão e kits de robótica e de eletrônica, bem como um ambiente de trabalho calmo, criativo e
+                    inspirador.
+                </p>
+            </div>
+            <div class="divImgPotimaker">
+                <img src="images/potimaker.jpg" alt="Foto do FabLab PotiMaker" class="imgPotimaker">
+                <button class="btnFotos"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <img class="detalheEsquerda" src="images/detalheEsquerda.png" alt="">
+            <img class="detalheDireita" src="images/detalheDireita.png" alt="">
+
+        </section>
+        <section class="equipe" id="equipe">
+            <div class="sobreEquipe">
+                <h2 class="tituloEquipe">
+                    nossa <br>
+                    equipe
+                </h2>
+                <p class="textoEquipe">
+                    No FabLab PotiMaker, possuímos atualmente uma equipe técnica composta por 1 coordenador e 13 membros
+                    ativos, residentes do universo maker.
+                </p>
+            </div>
+            <div class="divCardsEquipe">
+                <div class="cardsEquipe">
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Alan Felinto</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Ana Luiza</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro"> Ana Paula</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Bruno Vitorino</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">David Carvalho</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Eberton Marinho</h3>
+                            <p class="funcMembro">Coordenador</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Ekisuel Teixeira</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Fellipe Ferreira</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Francilene Oliveira</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Ianca Cavalcante</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Kaua Carvalho</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Luís Guilherme</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Salmon Vitorino</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                    <div class="cardEquipe">
+                        <div class="divFotoEquipe">
+                            <img src="images/equipe/avatar.png" alt="" class="imgEquipe">
+                        </div>
+                        <div class="infoEquipes">
+                            <h3 class="nomeMembro">Vinicius Cruz</h3>
+                            <p class="funcMembro">Membro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="fimComeco">
+         <img src="images/peixeCor.png" alt="" class="peixe">
+            <div class="divFimCom">
+                <h2 class="fim">
+                    O fim é o começo
+                </h2>
+                <h2 class="comeco">
+                    O começo é o fim.
+                </h2>
+            </div>
+            <div class="continue">
+                <p class="textoContinue">Clique na seta ao lado e continue a nadar pelo nosso site.</p>
+                <a href="#inicio" class="btnContinue"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>rodapé</p>
@@ -65,7 +286,6 @@
 
 
 
-    <script src="https://kit.fontawesome.com/3951763622.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
