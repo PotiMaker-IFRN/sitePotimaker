@@ -370,23 +370,35 @@ footer {
     }
 
     .menu-section.on .menu .menuList{
-        text-align: center;
+        align-items: center;
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        /* border: 1px solid black;
+        margin: 5px;
+        height: 80%; */
     }
     .menu-section.on .menu .menuList .menuItem{
         width: 100%;
-    }
-    .menu-section.on .menu .menulist .menuLink{
+        display: flex;
+        justify-content: center;
+        margin: 4px;
+        border: 1px solid black;
+    
+}
+    .menu-section.on .menu .menuList .menuLink{
         transition-duration: 0.5s;
         font-size: 4rem;
         line-height: 4rem;
-        display: block;
+        display: flex;
         text-align: center;
+        
     }
 
     .menu-section.on .social{
         height: 15px;
         padding: 10px;
+        margin-top: 100px;
  
      }
     .menu-section.on .social .socialList {
