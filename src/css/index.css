@@ -130,8 +130,8 @@
     position: relative;
 }
 .divResumo{
-    width: 30%;
-    height: 270px;
+    width: 49%;
+    height: 80%;
     background-color:white;
     font-size: 1.8rem;
     text-align: justify;
@@ -143,7 +143,7 @@
 
 }
 .divImgPotimaker{
-    width: 28%;
+    width: 35%;
     display: flex;
     border: 3px solid black;
     box-shadow: black 8px 5px;
@@ -162,7 +162,7 @@
     padding: 5px;
     position: absolute;
     right: -35px;
-    top: 40%;
+    top: 45%;
     cursor: pointer;
 }
 .detalheDireita, .detalheEsquerda{
@@ -180,7 +180,9 @@
 .equipe{
    display: flex;
    border-bottom: 3px solid black;
-   height: 700px;
+   height: max-content;
+   /* flex-wrap: wrap; */
+   /* background-color: #8000FF; */
 
 }
 .sobreEquipe{
@@ -191,7 +193,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 100px 15px;
+    gap: 100px;
 }
 .tituloEquipe{
     font-size: 5rem;
@@ -222,6 +225,7 @@
     /* align-items: center; */
     justify-content: center;
     padding: 10px;
+    /* background-color: #6182c9; */
 }
 .cardsEquipe {
     width: 100%;
@@ -230,14 +234,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    /* background-color: #B5FF00; */
 }
 .cardEquipe{
     width: 25%;
     /* background-color: #839ACD; */
-    margin: 5px;
+    margin: 0 2px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: 1px solid black;
 
 }
 .divFotoEquipe{

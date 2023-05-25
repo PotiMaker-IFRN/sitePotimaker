@@ -37,12 +37,12 @@ header {
     background-color: var(--bg-menu);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-weight: bold;
     padding: 16px;
     border-bottom: 3px solid #000000;
     font-family: 'Los Angeleno Grotesque', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .logo {
@@ -131,6 +131,7 @@ header {
 }
 main {
     grid-area: main;
+    /* display: none; */
     background-color: var(--bg-primary-section);
 }
 .fimComeco{
@@ -203,6 +204,7 @@ footer {
     justify-content: space-between;
     height: max-content;
     padding: 20px;
+   display: none;
     font-size: 1.6rem;
 }
 .infoRodape{
@@ -262,49 +264,27 @@ footer {
     width: 100%;
 }
 
-@media (max-width:768px) {
-    .menu{
-        height: 70%;
-    }
-    .menuLink {
-        font-size: 2rem;
+@media (max-width:920px) {
+    header {
+        font-size: 1.6rem;
 
     }
 
 }
 
-@media (max-width:650px) {
-    .menu{
-        height: 40%;
-    }
-    .menuLink {
-        font-size: 1.7rem;
-
-    }
-
-    .socialLink {
-        font-size: 1.7rem;
-
+@media (max-width:813px) {
+    header{
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width:550px) {
-    .menu{
-        height: 40%;
-    }
-    .menuLink {
-        font-size: 1.4rem;
-
-    }
-
-    .socialLink {
-        font-size: 1.4rem;
-
+@media (max-width:777px) {
+    header{
+        font-size: 1.2rem;
     }
 }
 
-
-@media(max-width:475px) {
+@media(max-width:571px) {
     header{
         justify-content: space-between;
     }
@@ -346,8 +326,9 @@ footer {
         justify-content: space-evenly;
         align-items: center;
     }
-    .menu-section.on nav {
+    .menu-section.on nav  {
         display: flex;
+        /* margin-top: 10px; */
         border: none;
         width: 100%;
     }
