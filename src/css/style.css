@@ -133,6 +133,7 @@ main {
     grid-area: main;
     /* display: none; */
     background-color: var(--bg-primary-section);
+    display: none;
 }
 .fimComeco{
     background-color: #000000;
@@ -204,7 +205,6 @@ footer {
     justify-content: space-between;
     height: max-content;
     padding: 20px;
-   display: none;
     font-size: 1.6rem;
 }
 .infoRodape{
@@ -213,6 +213,7 @@ footer {
 }
 .parceiros{
     width: 49%;
+ 
 }
 .tituloRodape{
     text-align: center;
@@ -234,12 +235,9 @@ footer {
 .infoLink{
     text-decoration: none;
     color: #000000;
-    /* border-bottom: 1px solid black; */
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    width: max-content;
-    /* font-weight: ; */
+}
+.infoLink i {
+    margin: 3px;
 }
 .infoLink:hover{
     border-bottom: 1px solid black;
@@ -267,7 +265,9 @@ footer {
 @media (max-width:920px) {
     header {
         font-size: 1.6rem;
-
+    }
+    .infoRodape  h3{
+        font-size: 1.8rem;
     }
 
 }
@@ -287,6 +287,16 @@ footer {
 @media(max-width:571px) {
     header{
         justify-content: space-between;
+    }
+    footer{
+       flex-direction: column;
+    }
+    .infoRodape, .parceiros{
+        width: 100%;
+    }
+    .infoRodape{
+        border-right: none;
+        border-bottom: 1px solid black;
     }
     .menu{
         display: none;
