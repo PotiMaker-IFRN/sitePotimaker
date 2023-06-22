@@ -18,6 +18,8 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -30,6 +32,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 100px auto 200px;
     font-family: 'Roboto', sans-serif;
+
 }
 
 header {
@@ -131,28 +134,27 @@ header {
 }
 main {
     grid-area: main;
-    /* display: none; */
     background-color: var(--bg-primary-section);
-    display: none;
+    
 }
 .fimComeco{
     background-color: #000000;
     padding: 5px;
     position: relative;
     border-bottom: 3px solid black;
+    /* display: none; */
 }
 .peixe{
     position: absolute;
     width: 200px;
     top: 0;
-    right: 200px;
+    right: 50px;
 }
 .divFimCom{
     width: 80%;
     padding: 10px;
 }
 .fim, .comeco{
-    text-align: center;
     width: max-content;
     padding: 5px;
     background-color:white;
@@ -206,6 +208,7 @@ footer {
     height: max-content;
     padding: 20px;
     font-size: 1.6rem;
+    font-family: 'Los Angeleno Grotesque', sans-serif;;
 }
 .infoRodape{
     width: 49%;
@@ -282,6 +285,12 @@ footer {
     header{
         font-size: 1.2rem;
     }
+}
+.peixe{
+    display: none;
+}
+.continue {
+    margin-top: 50px;
 }
 
 @media(max-width:571px) {
@@ -373,8 +382,7 @@ footer {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 4px;
-        border: 1px solid black;
+        margin: 20px 0;
     
 }
     .menu-section.on .menu .menuList .menuLink{
@@ -403,5 +411,29 @@ footer {
     
     .menuLink{
        font-size: 3rem;
+    }
+    .divFimCom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .fim, .comeco{
+        font-size: 3rem;
+       margin: 0;
+       text-align: center;
+    }
+    .textoContinue{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .btnContinue{
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+    }
+    .continue{
+        gap: 0px;
     }
 }

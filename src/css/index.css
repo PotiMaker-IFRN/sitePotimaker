@@ -10,6 +10,11 @@
     --bg-name: #B5FF00;
     --bg-detail: #839ACD;
 }
+html{
+    scroll-behavior: smooth;
+    overflow: auto;
+
+}
 .sobre{
     display: flex;
     width: 100%;
@@ -45,13 +50,14 @@
 }
 .detalheTituloPrincipal{
     background-color: var(--bg-detail);
-    padding: 0px 2px;
+    padding: 2px 2px;
     border: 4px solid black;
     box-shadow: black 8px 5px;
     font-size: 6.5rem;
 }
 .msgBemvindo{
     font-size: 1.8rem;
+    text-align: justify;
 }
 .botoes{
     width: 100%;
@@ -61,7 +67,7 @@
     gap: 50px;
 }
 .btnConhecer, .btnEquipe{
-    width: 40%;
+    width: 200px;
     background-color: var(--bg-detail);
     font-size: 2rem;
     text-decoration: none;
@@ -76,9 +82,10 @@
     justify-content: space-around;
     border-radius: 20px;
     cursor: pointer;
+    height: 40px;
 }
 .btnEquipe{
-    width: 30%;
+    width: 150px;
     background-color: var(--bg-primary-section);
 }
 .btnConhecer:hover{
@@ -128,10 +135,11 @@
     padding: 50px;
     background-color: var(--bg-primary-section);
     position: relative;
+    
 }
 .divResumo{
     width: 49%;
-    height: 80%;
+    height: 100%;
     background-color:white;
     font-size: 1.8rem;
     text-align: justify;
@@ -164,6 +172,7 @@
     right: -35px;
     top: 45%;
     cursor: pointer;
+    display: none;
 }
 .detalheDireita, .detalheEsquerda{
     position: absolute;
@@ -183,6 +192,7 @@
    height: max-content;
    /* flex-wrap: wrap; */
    /* background-color: #8000FF; */
+   /* display: none; */
 
 }
 .sobreEquipe{
@@ -243,7 +253,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .divFotoEquipe{
@@ -251,9 +261,13 @@
 }
 .imgEquipe{
     width: 100%;
+    border-radius: 50%;
 }
 .infoEquipes{
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .nomeMembro {
     font-size: 1.8rem;
@@ -265,4 +279,106 @@
     font-family: 'Los Angeleno Grotesque', sans-serif;
     font-size: 1.6rem;
     padding: 0 5px;
+}
+@media screen and (max-width: 1100px) {
+    .sobre {
+        flex-direction: column;
+    }
+    .descricao{
+        width: 100%;
+    }
+    .divImgPrincipal{
+        display: none;
+    }
+    .equipe{
+        flex-direction: column;
+    }
+    .sobreEquipe{
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid black;
+        gap: 20px;
+        padding: 20px;
+    }
+    .textoEquipe{
+        width: 80%;
+    }
+    .tituloEquipe{
+        width: 80%;
+    }
+    .divCardsEquipe{
+        width: 100%;
+        padding: 3px;
+    }
+}
+@media screen and (max-width:840px) {
+    .potimaker{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .divResumo{
+        width: 100%;
+    }
+    .divImgPotimaker{
+        width: 100%;
+    }
+    .cardEquipe{
+        width: 40%;
+        margin: 5px;
+    }
+}
+@media screen and (max-width:545px) {
+    .sobre{
+        justify-content: center;
+    }
+    .tituloPrincipal{
+        font-size: 4rem;
+    }
+    .detalheTituloPrincipal{
+        font-size: 4.5rem;
+    }
+    .btnConhecer, .btnEquipe {
+        font-size: 1.4rem;
+    }
+    .quemSomos{
+        flex-direction: column;
+    }
+    .divImagemSecundaria{
+        display: none;
+    }
+    .divTituloSecundario{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .tituloSecundario{
+        font-size: 4rem;
+    }
+    .nomeMembro{
+        font-size: 1.2rem;
+    }
+    .funcMembro{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tituloPrincipal{
+        font-size: 3rem;
+    }
+    .detalheTituloPrincipal{
+        font-size: 3.5rem;
+    }
+    .btnConhecer, .btnEquipe {
+        font-size: 1.3rem;
+    }
+    .botoes{
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .btnEquipe{
+        width: 200px;
+    }
 }
