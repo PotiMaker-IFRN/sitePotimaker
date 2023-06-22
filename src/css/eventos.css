@@ -1,0 +1,77 @@
+:root{
+    --bg-menu: #EFAB7F;
+    --bg-footer: #A275DB;
+    --bg-primary-section: #F6F3E4;
+    --bg-secondary-section: #DBD5E4;
+    --bg-tertiary-section: #000000;
+    --bg-primary-text: #8000FF;
+    --bg-secondary-text: #FF0054;
+    --bg-tertiary-text: #FF82A0;
+    --bg-name: #B5FF00;
+    --bg-detail: #839ACD;
+}
+
+.eventos{
+    /* background-color: var(--bg-secondary-section); */
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    /* padding: 10px; */
+    border-bottom: 3px solid black;
+    /* height: 500px; */
+    
+}
+
+.divTituloEvento{
+    width: 100%;
+    background-color: var(--bg-secondary-section);
+    padding: 30px;
+    text-align: left;
+    border-bottom: 3px solid black;
+}
+.tituloEvento{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Los Angeleno Grotesque', sans-serif;
+    color: white;
+    background-color: var(--bg-secondary-text);
+    border: 3px solid black;
+    box-shadow: black 8px 5px;
+    text-align: center;
+    padding: 5px;   
+    width: max-content;
+}
+.secondary{
+    background-color: var(--bg-tertiary-text);
+}
+.tertiary {
+    background-color: var(--bg-primary-text);
+}
+.divFotoEvento{
+    width: 100%;
+    background-color: var(--bg-primary-section);
+    padding: 0 0 30px 30px;
+}
+.fotoEvento{
+    width: 600px;
+    border: 3px solid black;
+    border-top: none;
+}
+@media screen and (max-width:640px) {
+    .fotoEvento{
+        width: 400px;
+    }
+    .tituloEvento{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    .fotoEvento{
+        width: 300px;
+    }
+    .tituloEvento{
+        font-size: 1.4rem;
+    }
+}
