@@ -47,31 +47,78 @@
 .tertiary {
     background-color: var(--bg-primary-text);
 }
-.divFotoEvento{
+.infoEventos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
     width: 100%;
+    
+}
+.divFotoEvento, .divResumoEvento{
+    width: 49%;
     background-color: var(--bg-primary-section);
-    padding: 0 0 30px 30px;
+    padding: 5px;
+}
+.divResumoEvento{
+    height: max-content;
+    background-color:white;
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid black;
+    box-shadow: black 8px 5px;
 }
 .fotoEvento{
-    width: 600px;
+    width: 100%;
     border: 3px solid black;
-    border-top: none;
+    box-shadow: black 8px 5px;
+
+    /* border-top: none; */
 }
-@media screen and (max-width:640px) {
-    .fotoEvento{
-        width: 400px;
+@media screen and (max-width: 800px) {
+    .divResumoEvento{
+        font-size: 1.4rem;
     }
     .tituloEvento{
+        font-size: 2.5rem;
+    }
+    
+}
+@media screen and (max-width:640px) {
+    .tituloEvento{
         font-size: 2rem;
+    }
+    .infoEventos{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    .divTituloEvento{
+        text-align: center;
+    }
+    .divFotoEvento, .divResumoEvento{
+        width: 100%;
+    }
+    .divFotoEvento{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 534px) {
+    .tituloEvento{
+        font-size: 1.6rem;
     }
     
 }
 
 @media screen and (max-width:430px) {
-    .fotoEvento{
-        width: 300px;
-    }
     .tituloEvento{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
