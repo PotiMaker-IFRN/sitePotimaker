@@ -269,6 +269,10 @@ html{
     flex-direction: column;
     gap: 5px;
 }
+.infoEquipes a {
+    text-decoration: none;
+    color: black;
+}
 .nomeMembro {
     font-size: 1.8rem;
     font-family: 'Los Angeleno Grotesque', sans-serif;
