@@ -374,6 +374,9 @@ html{
     .funcMembro{
         font-size: 1rem;
     }
+    .infoEquipes a {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 400px) {
     .tituloPrincipal{
